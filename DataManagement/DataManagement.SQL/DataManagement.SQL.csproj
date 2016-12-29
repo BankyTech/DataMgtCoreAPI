@@ -1,16 +1,21 @@
-<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
-
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="**\*.cs" />
     <EmbeddedResource Include="**\*.resx" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="NETStandard.Library" Version="1.6" />
   </ItemGroup>
-
+  <ItemGroup>
+    <None Include="Scripts\SQL Script-000001.sql" />
+    <None Include="Scripts\SQL Script-000002.sql" />
+    <None Include="Scripts\SQL Script-000003.sql" />
+    <None Include="Scripts\SQL Script-000004.sql" />
+    <None Include="Scripts\SQL Script-000005.sql" />
+    <None Include="Scripts\SQL Script-000006.sql" />
+    <None Include="Scripts\SQL Script-000007.sql" />
+  </ItemGroup>
 </Project>
