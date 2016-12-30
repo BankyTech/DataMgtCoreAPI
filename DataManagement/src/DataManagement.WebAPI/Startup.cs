@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using DataManagement.Business.Interfaces;
+using DataManagement.Repository.Interfaces;
+using DataManagement.Business;
+using DataManagement.Repository;
 
 namespace DataManagement.WebAPI
 {
@@ -29,6 +33,9 @@ namespace DataManagement.WebAPI
         {
             // Add framework services.
             services.AddMvc();
+
+            services.AddTransient<IUserManager, UserManager>();
+            services.AddTransient<IUserRepository, UserRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

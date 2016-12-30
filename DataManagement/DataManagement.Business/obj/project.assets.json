@@ -784,6 +784,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "DataManagement.Business.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "DataManagement.Entities": "1.0.0",
+          "NETStandard.Library": "1.6.0"
+        }
+      },
+      "DataManagement.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        }
+      },
+      "DataManagement.Repository.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "DataManagement.Entities": "1.0.0",
+          "NETStandard.Library": "1.6.0"
+        }
       }
     }
   },
@@ -3465,10 +3488,28 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
+    },
+    "DataManagement.Business.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../DataManagement.Business.Interfaces/DataManagement.Business.Interfaces.csproj",
+      "msbuildProject": "../DataManagement.Business.Interfaces/DataManagement.Business.Interfaces.csproj"
+    },
+    "DataManagement.Entities/1.0.0": {
+      "type": "project",
+      "path": "../DataManagement.Entities/DataManagement.Entities.csproj",
+      "msbuildProject": "../DataManagement.Entities/DataManagement.Entities.csproj"
+    },
+    "DataManagement.Repository.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../DataManagement.Repository.Interfaces/DataManagement.Repository.Interfaces.csproj",
+      "msbuildProject": "../DataManagement.Repository.Interfaces/DataManagement.Repository.Interfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v1.4": [
+      "DataManagement.Business.Interfaces",
+      "DataManagement.Entities",
+      "DataManagement.Repository.Interfaces",
       "NETStandard.Library >= 1.6.0"
     ]
   },
@@ -3487,7 +3528,17 @@
       ],
       "frameworks": {
         "netstandard1.4": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Projects\\2016\\Dec\\31\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository.Interfaces\\DataManagement.Repository.Interfaces.csproj": {
+              "projectPath": "E:\\Projects\\2016\\Dec\\31\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository.Interfaces\\DataManagement.Repository.Interfaces.csproj"
+            },
+            "E:\\Projects\\2016\\Dec\\31\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj": {
+              "projectPath": "E:\\Projects\\2016\\Dec\\31\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj"
+            },
+            "E:\\Projects\\2016\\Dec\\31\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Business.Interfaces\\DataManagement.Business.Interfaces.csproj": {
+              "projectPath": "E:\\Projects\\2016\\Dec\\31\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Business.Interfaces\\DataManagement.Business.Interfaces.csproj"
+            }
+          }
         }
       }
     },

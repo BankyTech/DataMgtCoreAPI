@@ -1,0 +1,13 @@
+E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Business\bin\Debug\netstandard1.4\DataManagement.Business.deps.json
+E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Business\bin\Debug\netstandard1.4\DataManagement.Business.dll
+E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Business\bin\Debug\netstandard1.4\DataManagement.Business.pdb
+E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Business\obj\Debug\netstandard1.4\DataManagement.Business.AssemblyInfo.cs
+E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Business\obj\Debug\netstandard1.4\DataManagement.Business.dll
+E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Business\obj\Debug\netstandard1.4\DataManagement.Business.pdb
+E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Business\bin\Debug\netstandard1.4\DataManagement.Business.Interfaces.dll
+E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Business\bin\Debug\netstandard1.4\DataManagement.Entities.dll
+E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Business\bin\Debug\netstandard1.4\DataManagement.Repository.Interfaces.dll
+E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Business\bin\Debug\netstandard1.4\DataManagement.Business.Interfaces.pdb
+E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Business\bin\Debug\netstandard1.4\DataManagement.Entities.pdb
+E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Business\bin\Debug\netstandard1.4\DataManagement.Repository.Interfaces.pdb
+E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Business\obj\Debug\netstandard1.4\DataManagement.Business.csprojResolveAssemblyReference.cache

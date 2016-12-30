@@ -784,6 +784,13 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "DataManagement.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        }
       }
     }
   },
@@ -3465,10 +3472,16 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
+    },
+    "DataManagement.Entities/1.0.0": {
+      "type": "project",
+      "path": "../DataManagement.Entities/DataManagement.Entities.csproj",
+      "msbuildProject": "../DataManagement.Entities/DataManagement.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v1.4": [
+      "DataManagement.Entities",
       "NETStandard.Library >= 1.6.0"
     ]
   },
@@ -3487,7 +3500,11 @@
       ],
       "frameworks": {
         "netstandard1.4": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Projects\\2016\\Dec\\31\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj": {
+              "projectPath": "E:\\Projects\\2016\\Dec\\31\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj"
+            }
+          }
         }
       }
     },
