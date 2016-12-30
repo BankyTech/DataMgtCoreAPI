@@ -9926,9 +9926,9 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "E:\\Projects\\2016\\Dec\\31\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\src\\DataManagement.WebAPI\\DataManagement.WebAPI.csproj",
-      "projectName": "DataManagement.WebAPI",
-      "projectPath": "E:\\Projects\\2016\\Dec\\31\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\src\\DataManagement.WebAPI\\DataManagement.WebAPI.csproj",
+      "projectUniqueName": "E:\\Projects\\2016\\Dec\\31\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\src\\DataManagement.WebAPI\\DataManagement.API.csproj",
+      "projectName": "DataManagement.API",
+      "projectPath": "E:\\Projects\\2016\\Dec\\31\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\src\\DataManagement.WebAPI\\DataManagement.API.csproj",
       "outputPath": "E:\\Projects\\2016\\Dec\\31\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\src\\DataManagement.WebAPI\\obj\\",
       "outputType": "NETCore",
       "originalTargetFrameworks": [
