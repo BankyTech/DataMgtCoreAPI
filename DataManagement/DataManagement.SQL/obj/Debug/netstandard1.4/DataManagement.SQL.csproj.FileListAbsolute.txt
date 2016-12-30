@@ -4,3 +4,4 @@ E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagem
 E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.SQL\obj\Debug\netstandard1.4\DataManagement.SQL.AssemblyInfo.cs
 E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.SQL\obj\Debug\netstandard1.4\DataManagement.SQL.dll
 E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.SQL\obj\Debug\netstandard1.4\DataManagement.SQL.pdb
+E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.SQL\obj\Debug\netstandard1.4\DataManagement.SQL.csprojResolveAssemblyReference.cache

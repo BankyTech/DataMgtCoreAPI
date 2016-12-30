@@ -2,16 +2,14 @@
 using DataManagement.Entities;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Text;
 using static System.Data.CommandType;
 using DataManagement.Repository.Interfaces;
 
 namespace DataManagement.Repository
 {
-   public class UserRepository:BaseRepository,IUserRepository
+    public class UserRepository:BaseRepository,IUserRepository
     {
         public bool AddUser(User user)
         {

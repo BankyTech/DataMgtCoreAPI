@@ -1,9 +1,7 @@
 ﻿using DataManagement.Business.Interfaces;
 using DataManagement.Entities;
 using DataManagement.Repository.Interfaces;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace DataManagement.Business
 {
