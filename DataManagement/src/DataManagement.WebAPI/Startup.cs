@@ -7,6 +7,7 @@ using DataManagement.Business.Interfaces;
 using DataManagement.Repository.Interfaces;
 using DataManagement.Business;
 using DataManagement.Repository;
+using DataManagement.Entities;
 
 namespace DataManagement.WebAPI
 {
@@ -29,9 +30,11 @@ namespace DataManagement.WebAPI
         {
             // Add framework services.
             services.AddMvc();
-
             services.AddTransient<IUserManager, UserManager>();
             services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IRepository<Customer>, CustomerRepository>();
+
+            services.AddTransient<IRepository<Product>, ProductRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,7 +42,6 @@ namespace DataManagement.WebAPI
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-
             app.UseMvc();
         }
     }

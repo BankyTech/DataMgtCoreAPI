@@ -2,7 +2,6 @@
 using System.Data;
 using System.Data.SqlClient;
 
-
 namespace DataManagement.Repository
 {
     public class BaseRepository: IDisposable

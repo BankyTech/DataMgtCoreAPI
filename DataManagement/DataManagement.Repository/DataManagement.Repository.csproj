@@ -8,9 +8,11 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Dapper" Version="1.50.2" />
+    <PackageReference Include="Dapper.FluentMap" Version="1.5.1" />
     <PackageReference Include="NETStandard.Library" Version="1.6" />
     <PackageReference Include="System.Data.SqlClient" Version="4.3.0" />
     <PackageReference Include="System.Runtime" Version="4.3.0" />
+    <PackageReference Include="System.ValueTuple" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataManagement.Entities\DataManagement.Entities.csproj" />

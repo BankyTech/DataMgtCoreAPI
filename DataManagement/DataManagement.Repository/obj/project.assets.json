@@ -31,6 +31,19 @@
           "lib/netstandard1.3/Dapper.dll": {}
         }
       },
+      "Dapper.FluentMap/1.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Dapper": "1.50.0",
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Dapper.FluentMap.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Dapper.FluentMap.dll": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -1307,6 +1320,20 @@
           "ref/netstandard1.2/System.Threading.Timer.dll": {}
         }
       },
+      "System.ValueTuple/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.ValueTuple.dll": {}
+        }
+      },
       "System.Xml.ReaderWriter/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1410,6 +1437,21 @@
         "lib/net451/Dapper.xml",
         "lib/netstandard1.3/Dapper.dll",
         "lib/netstandard1.3/Dapper.xml"
+      ]
+    },
+    "Dapper.FluentMap/1.5.1": {
+      "sha512": "poRa/O82CK0t20kP//P0MFgv2si2hja2Nw0GV0Js8Nip4ZipmSl1XUzqi6AsZkyxFXsYll0Ks4SkQnf8U4i9MA==",
+      "type": "package",
+      "path": "dapper.fluentmap/1.5.1",
+      "files": [
+        "dapper.fluentmap.1.5.1.nupkg.sha512",
+        "dapper.fluentmap.nuspec",
+        "lib/net40/Dapper.FluentMap.dll",
+        "lib/net40/Dapper.FluentMap.xml",
+        "lib/net451/Dapper.FluentMap.dll",
+        "lib/net451/Dapper.FluentMap.xml",
+        "lib/netstandard1.3/Dapper.FluentMap.dll",
+        "lib/netstandard1.3/Dapper.FluentMap.xml"
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
@@ -4839,6 +4881,21 @@
         "system.threading.timer.nuspec"
       ]
     },
+    "System.ValueTuple/4.3.0": {
+      "sha512": "cNLEvBX3d6MMQRZe3SMFNukVbitDAEpVZO17qa0/2FHxZ7Y7PpFRpr6m2615XYM/tYYYf0B+WyHNujqIw8Luwg==",
+      "type": "package",
+      "path": "system.valuetuple/4.3.0",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/.xml",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/.xml",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "system.valuetuple.4.3.0.nupkg.sha512",
+        "system.valuetuple.nuspec"
+      ]
+    },
     "System.Xml.ReaderWriter/4.3.0": {
       "sha512": "GrprA+Z0RUXaR4N7/eW71j1rgMnEnEVlgii49GZyAjTH7uliMnrOU3HNFBr6fEDBCJCIdlVNq9hHbaDR621XBA==",
       "type": "package",
@@ -5028,11 +5085,13 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v1.4": [
       "Dapper >= 1.50.2",
+      "Dapper.FluentMap >= 1.5.1",
       "DataManagement.Entities",
       "DataManagement.Repository.Interfaces",
       "NETStandard.Library >= 1.6.0",
       "System.Data.SqlClient >= 4.3.0",
-      "System.Runtime >= 4.3.0"
+      "System.Runtime >= 4.3.0",
+      "System.ValueTuple >= 4.3.0"
     ]
   },
   "packageFolders": {
@@ -5064,9 +5123,17 @@
     "frameworks": {
       "netstandard1.4": {
         "dependencies": {
+          "Dapper.FluentMap": {
+            "target": "Package",
+            "version": "1.5.1"
+          },
           "Dapper": {
             "target": "Package",
             "version": "1.50.2"
+          },
+          "System.ValueTuple": {
+            "target": "Package",
+            "version": "4.3.0"
           },
           "System.Runtime": {
             "target": "Package",

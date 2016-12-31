@@ -17,40 +17,39 @@ namespace DataManagement.WebAPI.Controllers
             _userManager = userManager;
         }
 
-        // GET: api/values
+        // GET: api/user
         [HttpGet]
         public IEnumerable<User> Get()
         {
             return _userManager.GetAllUser();
-            // return new string[] { "value1", "value2" };
         }
 
-        // GET api/values/5
+        // GET api/user/5
         [HttpGet("{id}")]
         public User Get(int id)
         {
-            //return "value";
             return _userManager.GetUserById(id);
         }
 
-        // POST api/values
+        // POST api/user
         [HttpPost]
         public void Post([FromBody]User user)
         {
             _userManager.AddUser(user);
         }
 
-        // PUT api/values/5
+        // PUT api/user/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]User user)
         {
             _userManager.UpdateUser(user);
         }
 
-        // DELETE api/values/5
+        // DELETE api/user/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            _userManager.DeleteUser(id);
         }
     }
 }

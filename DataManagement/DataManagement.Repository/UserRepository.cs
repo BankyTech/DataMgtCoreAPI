@@ -6,10 +6,11 @@ using System.Data.SqlClient;
 using System.Linq;
 using static System.Data.CommandType;
 using DataManagement.Repository.Interfaces;
+using System.Data;
 
 namespace DataManagement.Repository
 {
-    public class UserRepository:BaseRepository,IUserRepository
+    public class UserRepository : BaseRepository, IUserRepository
     {
         public bool AddUser(User user)
         {
@@ -41,12 +42,18 @@ namespace DataManagement.Repository
             return true;
         }
 
-        public IList<User> GetAllUser()
-        {
-            IList<User> customerList = SqlMapper.Query<User>(con, "GetAllUsers", commandType: StoredProcedure).ToList();
-            return customerList;
-        }
+        //public IList<User> GetAllUser()
+        //{
+        //    //UpdateMultipleUsers();
 
+        //    IList<User> customerList = SqlMapper.Query<User>(con, "GetAllUsers", commandType: StoredProcedure).ToList();
+        //    return customerList;
+        //}
+
+        //public IList<dynamic> GetAllUser() => SqlMapper.Query<dynamic>(con, "GetAllUsers", commandType: StoredProcedure).ToList();
+
+
+        public IList<User> GetAllUser() => SqlMapper.Query<User>(con, "GetAllUsers", commandType: StoredProcedure).ToList();
         public User GetUserById(int userId)
         {
             try
@@ -61,6 +68,7 @@ namespace DataManagement.Repository
                 throw;
             }
         }
+
 
         public bool UpdateUser(User user)
         {
@@ -84,5 +92,36 @@ namespace DataManagement.Repository
                 throw ex;
             }
         }
+
+        public void InsertMultipleUsers()
+        {
+            object myObj = new[] {
+                new { name = "B Narayan", email = "bnarayan.sharma@outlook.com" },
+                new { name = "Manish Sharma", email = "manish.sharma**@outlook.com" },
+                new { name = "Rohit Kumar", email = "rohit.kumar**@outlook.com" }};
+
+            con.Execute(@"insert Users(UserName, UserEmail) values (@name, @email)", myObj);
+        }
+
+
+        //public IList<Pr> GetAllProducts()
+        //{
+        //    IList<User> customerList = SqlMapper.Query<User>(con, "GetAllUsers", commandType: StoredProcedure).ToList();
+        //    return customerList;
+        //}
+
+       // public IList<dynamic> GetAllUser() => SqlMapper.Query<dynamic>(con, "GetAllUsers", commandType: StoredProcedure).ToList();
+
+
+        (List<Customer> customers, List<User> users) GetUsersAndCustomers()
+        {
+            using (var multi = con.QueryMultiple("select * from Customers;select * from Users"))
+            {
+                var customers = multi.Read<Customer>().ToList();
+                var users = multi.Read<User>().ToList();
+                return (customers, users);
+            }
+        }
+
     }
 }
