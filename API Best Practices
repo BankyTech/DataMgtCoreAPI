@@ -1,0 +1,25 @@
+It is generally not recommended to use multiple dependency injection (DI) frameworks in the same .NET Core API application.
+
+Microsoft's built-in DI framework is a lightweight and easy-to-use DI container that is sufficient for most .NET Core API applications. It provides basic functionality for registering and resolving dependencies and is optimized for performance.
+
+Autofac is another popular DI framework for .NET Core that provides more advanced features, such as assembly scanning and more flexible lifetime management options. It is a powerful tool that can be useful for more complex applications with advanced DI needs.
+
+However, using multiple DI frameworks in the same application can lead to confusion and unnecessary complexity. It can also result in conflicts between the frameworks and make it harder to manage the application's dependencies.
+
+Instead of using multiple DI frameworks, it is better to choose one framework that meets your needs and stick with it. If you find that the built-in DI framework is not sufficient for your needs, you can consider using a more advanced framework like Autofac. However, it is important to carefully consider your application's requirements and choose the right tool for the job.
+
+
+
+
+
+
+
+It is generally not recommended to use NuGet packages that were built for the .NET Framework 4.6.x version in a .NET Core API application.
+
+.NET Core and .NET Framework are two different frameworks with different runtime environments and API sets. While .NET Core is a cross-platform and open-source framework, .NET Framework is a Windows-only framework that is no longer actively developed. While some .NET Framework packages may be compatible with .NET Core, it is generally best to use packages that are specifically built for .NET Core.
+
+Using .NET Framework packages in a .NET Core API application can result in compatibility issues and may cause unexpected runtime errors. In addition, .NET Framework packages may contain dependencies that are not compatible with .NET Core, which can further complicate the integration process.
+
+If you need to use a specific package that is only available for .NET Framework, you can consider using a compatibility layer, such as .NET Standard or .NET Core's Compatibility Shim, to bridge the gap between the two frameworks. However, this approach can be complex and may require significant effort to implement.
+
+In general, it is best to use NuGet packages that are specifically built for .NET Core to ensure the best compatibility and performance.
