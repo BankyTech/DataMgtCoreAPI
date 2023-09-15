@@ -52,4 +52,13 @@ Incremental Load Support: You can implement incremental data loading strategies 
 Overall, the KingswaySoft SSIS Integration Toolkit for Snowflake simplifies the process of integrating data between Snowflake and other systems using the familiar SSIS environment. It is a valuable tool for organizations that rely on SSIS for their data integration needs and need to work with Snowflake data warehouses.
 
 
+KingswaySoft SSIS Integration Toolkit
+a. Introduction to KingswaySoft
+b. KingswaySoft and Snowflake
+Prerequisites
+Connection Details
+User Roles and Permissions
+
+
+
 
