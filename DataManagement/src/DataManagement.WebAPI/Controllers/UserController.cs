@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using DataManagement.Business.Interfaces;
 using DataManagement.Entities;
@@ -10,46 +11,151 @@ namespace DataManagement.WebAPI.Controllers
     [Route("api/[controller]")]
     public class UserController : Controller
     {
-        IUserManager _userManager;
+        private readonly IUserManager _userManager;
        
         public UserController(IUserManager userManager)
         {
-            _userManager = userManager;
+            _userManager = userManager ?? throw new ArgumentNullException(nameof(userManager));
         }
 
         // GET: api/user
         [HttpGet]
-        public IEnumerable<User> Get()
+        public IActionResult Get()
         {
-            return _userManager.GetAllUser();
+            try
+            {
+                var users = _userManager.GetAllUser();
+                return Ok(users);
+            }
+            catch (Exception ex)
+            {
+                // In a real application, use proper logging here
+                return StatusCode(500, "An error occurred while retrieving users");
+            }
         }
 
         // GET api/user/5
         [HttpGet("{id}")]
-        public User Get(int id)
+        public IActionResult Get(int id)
         {
-            return _userManager.GetUserById(id);
+            try
+            {
+                if (id <= 0)
+                {
+                    return BadRequest("User ID must be greater than 0");
+                }
+
+                var user = _userManager.GetUserById(id);
+                if (user == null)
+                {
+                    return NotFound($"User with ID {id} not found");
+                }
+
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                // In a real application, use proper logging here
+                return StatusCode(500, "An error occurred while retrieving the user");
+            }
         }
 
         // POST api/user
         [HttpPost]
-        public void Post([FromBody]User user)
+        public IActionResult Post([FromBody]User user)
         {
-            _userManager.AddUser(user);
+            try
+            {
+                if (user == null)
+                {
+                    return BadRequest("User data is required");
+                }
+
+                if (string.IsNullOrEmpty(user.UserName))
+                {
+                    return BadRequest("User name is required");
+                }
+
+                var result = _userManager.AddUser(user);
+                if (result)
+                {
+                    return CreatedAtAction(nameof(Get), new { id = user.UserId }, user);
+                }
+
+                return StatusCode(500, "Failed to create user");
+            }
+            catch (Exception ex)
+            {
+                // In a real application, use proper logging here
+                return StatusCode(500, "An error occurred while creating the user");
+            }
         }
 
         // PUT api/user/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]User user)
+        public IActionResult Put(int id, [FromBody]User user)
         {
-            _userManager.UpdateUser(user);
+            try
+            {
+                if (id <= 0)
+                {
+                    return BadRequest("User ID must be greater than 0");
+                }
+
+                if (user == null)
+                {
+                    return BadRequest("User data is required");
+                }
+
+                if (user.UserId != id)
+                {
+                    return BadRequest("User ID in URL does not match User ID in body");
+                }
+
+                if (string.IsNullOrEmpty(user.UserName))
+                {
+                    return BadRequest("User name is required");
+                }
+
+                var result = _userManager.UpdateUser(user);
+                if (result)
+                {
+                    return NoContent();
+                }
+
+                return StatusCode(500, "Failed to update user");
+            }
+            catch (Exception ex)
+            {
+                // In a real application, use proper logging here
+                return StatusCode(500, "An error occurred while updating the user");
+            }
         }
 
         // DELETE api/user/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
-            _userManager.DeleteUser(id);
+            try
+            {
+                if (id <= 0)
+                {
+                    return BadRequest("User ID must be greater than 0");
+                }
+
+                var result = _userManager.DeleteUser(id);
+                if (result)
+                {
+                    return NoContent();
+                }
+
+                return StatusCode(500, "Failed to delete user");
+            }
+            catch (Exception ex)
+            {
+                // In a real application, use proper logging here
+                return StatusCode(500, "An error occurred while deleting the user");
+            }
         }
     }
 }

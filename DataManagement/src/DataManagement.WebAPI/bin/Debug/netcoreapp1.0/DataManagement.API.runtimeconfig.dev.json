@@ -1,7 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\BNarayan\\.nuget\\packages"
+      "/home/runner/.dotnet/store/|arch|/|tfm|",
+      "/home/runner/.nuget/packages"
     ]
   }
 }

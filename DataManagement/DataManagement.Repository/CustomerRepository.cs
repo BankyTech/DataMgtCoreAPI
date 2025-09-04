@@ -15,6 +15,9 @@ namespace DataManagement.Repository
         {
             try
             {
+                if (entity == null)
+                    throw new ArgumentNullException(nameof(entity));
+
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@CustomerName", entity.CustomerName);
                 parameters.Add("@CustomerEmail", entity.CustomerEmail);
@@ -23,40 +26,81 @@ namespace DataManagement.Repository
             }
             catch (Exception ex)
             {
-                throw ex;
+                // Log the actual exception details in a real application
+                throw new Exception("Failed to add customer", ex);
             }
         }
 
         public void Delete(int id)
         {
-            DynamicParameters parameters = new DynamicParameters();
-            parameters.Add("@CustomerId", id);
-            SqlMapper.Execute(con, "DeleteCustomer", param: parameters, commandType:StoredProcedure);
+            try
+            {
+                if (id <= 0)
+                    throw new ArgumentException("Customer ID must be greater than 0", nameof(id));
+
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@CustomerId", id);
+                SqlMapper.Execute(con, "DeleteCustomer", param: parameters, commandType:StoredProcedure);
+            }
+            catch (Exception ex)
+            {
+                // Log the actual exception details in a real application
+                throw new Exception("Failed to delete customer", ex);
+            }
         }
 
         public IEnumerable<Customer> Get()
         {
-            IList<Customer> customerList = SqlMapper.Query<Customer>(con, "GetAllCustomer", commandType:StoredProcedure).ToList();
-            return customerList;
+            try
+            {
+                IList<Customer> customerList = SqlMapper.Query<Customer>(con, "GetAllCustomer", commandType:StoredProcedure).ToList();
+                return customerList;
+            }
+            catch (Exception ex)
+            {
+                // Log the actual exception details in a real application
+                throw new Exception("Failed to get all customers", ex);
+            }
         }
 
         public Customer Get(int id)
         {
-            DynamicParameters parameters = new DynamicParameters();           
-            parameters.Add("@CustomerID", id);
-            return SqlMapper.Query<Customer>((SqlConnection)con, 
-                "GetCustomerById", parameters, commandType:StoredProcedure).FirstOrDefault();
+            try
+            {
+                if (id <= 0)
+                    throw new ArgumentException("Customer ID must be greater than 0", nameof(id));
 
+                DynamicParameters parameters = new DynamicParameters();           
+                parameters.Add("@CustomerID", id);
+                return SqlMapper.Query<Customer>((SqlConnection)con, 
+                    "GetCustomerById", parameters, commandType:StoredProcedure).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                // Log the actual exception details in a real application
+                throw new Exception("Failed to get customer by ID", ex);
+            }
         }
 
         public void Update(Customer entity)
         {
-            DynamicParameters parameters = new DynamicParameters();
-            parameters.Add("@CustomerID", entity.CustomerName);
-            parameters.Add("@CustomerName", entity.CustomerName);
-            parameters.Add("@CustomerEmail", entity.CustomerEmail);
-            parameters.Add("@CustomerMobile", entity.CustomerMobile);
-            SqlMapper.Execute(con, "UpdateCustomer", param: parameters, commandType: StoredProcedure);
+            try
+            {
+                if (entity == null)
+                    throw new ArgumentNullException(nameof(entity));
+
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@CustomerID", entity.CustomerId);
+                parameters.Add("@CustomerName", entity.CustomerName);
+                parameters.Add("@CustomerEmail", entity.CustomerEmail);
+                parameters.Add("@CustomerMobile", entity.CustomerMobile);
+                SqlMapper.Execute(con, "UpdateCustomer", param: parameters, commandType: StoredProcedure);
+            }
+            catch (Exception ex)
+            {
+                // Log the actual exception details in a real application
+                throw new Exception("Failed to update customer", ex);
+            }
         }
     }
 }

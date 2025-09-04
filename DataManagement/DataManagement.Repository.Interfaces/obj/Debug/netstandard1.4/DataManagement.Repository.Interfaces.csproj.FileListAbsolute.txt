@@ -1,9 +1,0 @@
-E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Repository.Interfaces\bin\Debug\netstandard1.4\DataManagement.Repository.Interfaces.deps.json
-E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Repository.Interfaces\bin\Debug\netstandard1.4\DataManagement.Repository.Interfaces.dll
-E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Repository.Interfaces\bin\Debug\netstandard1.4\DataManagement.Repository.Interfaces.pdb
-E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Repository.Interfaces\obj\Debug\netstandard1.4\DataManagement.Repository.Interfaces.csprojResolveAssemblyReference.cache
-E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Repository.Interfaces\obj\Debug\netstandard1.4\DataManagement.Repository.Interfaces.AssemblyInfo.cs
-E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Repository.Interfaces\obj\Debug\netstandard1.4\DataManagement.Repository.Interfaces.dll
-E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Repository.Interfaces\obj\Debug\netstandard1.4\DataManagement.Repository.Interfaces.pdb
-E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Repository.Interfaces\bin\Debug\netstandard1.4\DataManagement.Entities.dll
-E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Repository.Interfaces\bin\Debug\netstandard1.4\DataManagement.Entities.pdb

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using DataManagement.Entities;
 using DataManagement.Repository.Interfaces;
@@ -10,41 +11,131 @@ namespace DataManagement.API.Controllers
     [Route("api/[controller]")]
     public class CustomerController : Controller
     {
-        IRepository<Customer> _customerRepository;
+        private readonly IRepository<Customer> _customerRepository;
 
         public CustomerController(IRepository<Customer> customerRepository)
         {
-            _customerRepository = customerRepository;
+            _customerRepository = customerRepository ?? throw new ArgumentNullException(nameof(customerRepository));
         }
 
         [HttpGet]
-        public IEnumerable<Customer> Get()
+        public IActionResult Get()
         {
-             return _customerRepository.Get();
+            try
+            {
+                var customers = _customerRepository.Get();
+                return Ok(customers);
+            }
+            catch (Exception ex)
+            {
+                // In a real application, use proper logging here
+                return StatusCode(500, "An error occurred while retrieving customers");
+            }
         }
 
         [HttpGet("{id}")]
-        public Customer Get(int id)
+        public IActionResult Get(int id)
         {
-            return _customerRepository.Get(id);
+            try
+            {
+                if (id <= 0)
+                {
+                    return BadRequest("Customer ID must be greater than 0");
+                }
+
+                var customer = _customerRepository.Get(id);
+                if (customer == null)
+                {
+                    return NotFound($"Customer with ID {id} not found");
+                }
+
+                return Ok(customer);
+            }
+            catch (Exception ex)
+            {
+                // In a real application, use proper logging here
+                return StatusCode(500, "An error occurred while retrieving the customer");
+            }
         }
 
         [HttpPost]
-        public void Post([FromBody]Customer customer)
+        public IActionResult Post([FromBody]Customer customer)
         {
-            _customerRepository.Add(customer);
+            try
+            {
+                if (customer == null)
+                {
+                    return BadRequest("Customer data is required");
+                }
+
+                if (string.IsNullOrEmpty(customer.CustomerName))
+                {
+                    return BadRequest("Customer name is required");
+                }
+
+                _customerRepository.Add(customer);
+                return CreatedAtAction(nameof(Get), new { id = customer.CustomerId }, customer);
+            }
+            catch (Exception ex)
+            {
+                // In a real application, use proper logging here
+                return StatusCode(500, "An error occurred while creating the customer");
+            }
         }
 
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]Customer customer)
+        public IActionResult Put(int id, [FromBody]Customer customer)
         {
-            _customerRepository.Update(customer);
+            try
+            {
+                if (id <= 0)
+                {
+                    return BadRequest("Customer ID must be greater than 0");
+                }
+
+                if (customer == null)
+                {
+                    return BadRequest("Customer data is required");
+                }
+
+                if (customer.CustomerId != id)
+                {
+                    return BadRequest("Customer ID in URL does not match Customer ID in body");
+                }
+
+                if (string.IsNullOrEmpty(customer.CustomerName))
+                {
+                    return BadRequest("Customer name is required");
+                }
+
+                _customerRepository.Update(customer);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                // In a real application, use proper logging here
+                return StatusCode(500, "An error occurred while updating the customer");
+            }
         }
 
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
-            _customerRepository.Delete(id);
+            try
+            {
+                if (id <= 0)
+                {
+                    return BadRequest("Customer ID must be greater than 0");
+                }
+
+                _customerRepository.Delete(id);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                // In a real application, use proper logging here
+                return StatusCode(500, "An error occurred while deleting the customer");
+            }
         }
     }
 }

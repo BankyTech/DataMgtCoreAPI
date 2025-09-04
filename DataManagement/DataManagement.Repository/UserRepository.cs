@@ -16,6 +16,9 @@ namespace DataManagement.Repository
         {
             try
             {
+                if (user == null)
+                    throw new ArgumentNullException(nameof(user));
+
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@UserName", user.UserName);
                 parameters.Add("@UserMobile", user.UserMobile);
@@ -30,42 +33,46 @@ namespace DataManagement.Repository
             }
             catch (Exception ex)
             {
-                throw ex;
+                // Log the actual exception details in a real application
+                throw new Exception("Failed to add user", ex);
             }
         }
 
         public bool DeleteUser(int userId)
         {
-            DynamicParameters parameters = new DynamicParameters();
-            parameters.Add("@UserId", userId);
-            SqlMapper.Execute(con, "DeleteUser", param: parameters, commandType: StoredProcedure);
-            return true;
+            try
+            {
+                if (userId <= 0)
+                    throw new ArgumentException("User ID must be greater than 0", nameof(userId));
+
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@UserId", userId);
+                SqlMapper.Execute(con, "DeleteUser", param: parameters, commandType: StoredProcedure);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                // Log the actual exception details in a real application
+                throw new Exception("Failed to delete user", ex);
+            }
         }
-
-        //public IList<User> GetAllUser()
-        //{
-        //    //UpdateMultipleUsers();
-
-        //    IList<User> customerList = SqlMapper.Query<User>(con, "GetAllUsers", commandType: StoredProcedure).ToList();
-        //    return customerList;
-        //}
-
-        //public IList<dynamic> GetAllUser() => SqlMapper.Query<dynamic>(con, "GetAllUsers", commandType: StoredProcedure).ToList();
-
 
         public IList<User> GetAllUser() => SqlMapper.Query<User>(con, "GetAllUsers", commandType: StoredProcedure).ToList();
         public User GetUserById(int userId)
         {
             try
             {
+                if (userId <= 0)
+                    throw new ArgumentException("User ID must be greater than 0", nameof(userId));
+
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@CustomerID", userId);
                 return SqlMapper.Query<User>((SqlConnection)con, "GetUserById", parameters, commandType: StoredProcedure).FirstOrDefault();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                // Log the actual exception details in a real application
+                throw new Exception("Failed to get user by ID", ex);
             }
         }
 
@@ -74,6 +81,9 @@ namespace DataManagement.Repository
         {
             try
             {
+                if (user == null)
+                    throw new ArgumentNullException(nameof(user));
+
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@UserId", user.UserId);
                 parameters.Add("@UserName", user.UserName);
@@ -89,7 +99,8 @@ namespace DataManagement.Repository
             }
             catch (Exception ex)
             {
-                throw ex;
+                // Log the actual exception details in a real application
+                throw new Exception("Failed to update user", ex);
             }
         }
 
@@ -97,21 +108,11 @@ namespace DataManagement.Repository
         {
             object myObj = new[] {
                 new { name = "B Narayan", email = "bnarayan.sharma@outlook.com" },
-                new { name = "Manish Sharma", email = "manish.sharma**@outlook.com" },
-                new { name = "Rohit Kumar", email = "rohit.kumar**@outlook.com" }};
+                new { name = "Manish Sharma", email = "manish.sharma@outlook.com" },
+                new { name = "Rohit Kumar", email = "rohit.kumar@outlook.com" }};
 
             con.Execute(@"insert Users(UserName, UserEmail) values (@name, @email)", myObj);
         }
-
-
-        //public IList<Pr> GetAllProducts()
-        //{
-        //    IList<User> customerList = SqlMapper.Query<User>(con, "GetAllUsers", commandType: StoredProcedure).ToList();
-        //    return customerList;
-        //}
-
-       // public IList<dynamic> GetAllUser() => SqlMapper.Query<dynamic>(con, "GetAllUsers", commandType: StoredProcedure).ToList();
-
 
         (List<Customer> customers, List<User> users) GetUsersAndCustomers()
         {

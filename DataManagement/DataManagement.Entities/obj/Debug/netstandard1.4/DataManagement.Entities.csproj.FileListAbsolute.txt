@@ -1,7 +1,0 @@
-E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Entities\bin\Debug\netstandard1.4\DataManagement.Entities.deps.json
-E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Entities\bin\Debug\netstandard1.4\DataManagement.Entities.dll
-E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Entities\bin\Debug\netstandard1.4\DataManagement.Entities.pdb
-E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Entities\obj\Debug\netstandard1.4\DataManagement.Entities.AssemblyInfo.cs
-E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Entities\obj\Debug\netstandard1.4\DataManagement.Entities.dll
-E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Entities\obj\Debug\netstandard1.4\DataManagement.Entities.pdb
-E:\Projects\2016\Dec\31\DataMgtCoreAPI\DataMgtCoreAPI\DataManagement\DataManagement.Entities\obj\Debug\netstandard1.4\DataManagement.Entities.csprojResolveAssemblyReference.cache
