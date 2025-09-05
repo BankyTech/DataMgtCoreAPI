@@ -8,8 +8,9 @@ using DataManagement.Repository.Interfaces;
 
 namespace DataManagement.API.Controllers
 {
+    [ApiController]
     [Route("api/[controller]")]
-    public class CustomerController : Controller
+    public class CustomerController : ControllerBase
     {
         private readonly IRepository<Customer> _customerRepository;
 
@@ -26,7 +27,7 @@ namespace DataManagement.API.Controllers
                 var customers = _customerRepository.Get();
                 return Ok(customers);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // In a real application, use proper logging here
                 return StatusCode(500, "An error occurred while retrieving customers");
@@ -51,7 +52,7 @@ namespace DataManagement.API.Controllers
 
                 return Ok(customer);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // In a real application, use proper logging here
                 return StatusCode(500, "An error occurred while retrieving the customer");
@@ -76,7 +77,7 @@ namespace DataManagement.API.Controllers
                 _customerRepository.Add(customer);
                 return CreatedAtAction(nameof(Get), new { id = customer.CustomerId }, customer);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // In a real application, use proper logging here
                 return StatusCode(500, "An error occurred while creating the customer");
@@ -111,7 +112,7 @@ namespace DataManagement.API.Controllers
                 _customerRepository.Update(customer);
                 return NoContent();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // In a real application, use proper logging here
                 return StatusCode(500, "An error occurred while updating the customer");
@@ -131,7 +132,7 @@ namespace DataManagement.API.Controllers
                 _customerRepository.Delete(id);
                 return NoContent();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // In a real application, use proper logging here
                 return StatusCode(500, "An error occurred while deleting the customer");

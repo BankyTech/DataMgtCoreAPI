@@ -10,8 +10,9 @@ using DataManagement.Repository.Interfaces;
 
 namespace DataManagement.API.Controllers
 {
+    [ApiController]
     [Route("api/[controller]")]
-    public class ProductController : Controller
+    public class ProductController : ControllerBase
     {
 
         IRepository<Product> _productRepository;
@@ -22,35 +23,37 @@ namespace DataManagement.API.Controllers
 
         // GET: api/values
         [HttpGet]
-        public IEnumerable<Product> Get()
+        public ActionResult<IEnumerable<Product>> Get()
         {
-            //return new string[] { "value1", "value2" };
-            return _productRepository.Get();
+            return Ok(_productRepository.Get());
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ActionResult<string> Get(int id)
         {
-            return "value";
+            return Ok("value");
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        public IActionResult Post([FromBody] string value)
         {
+            return NoContent();
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public IActionResult Put(int id, [FromBody] string value)
         {
+            return NoContent();
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            return NoContent();
         }
     }
 }

@@ -5,7 +5,6 @@ using DataManagement.Repository.Interfaces;
 using DataManagement.Entities;
 using Dapper;
 using static System.Data.CommandType;
-using System.Data.SqlClient;
 
 namespace DataManagement.Repository
 {
@@ -72,8 +71,12 @@ namespace DataManagement.Repository
 
                 DynamicParameters parameters = new DynamicParameters();           
                 parameters.Add("@CustomerID", id);
-                return SqlMapper.Query<Customer>((SqlConnection)con, 
-                    "GetCustomerById", parameters, commandType:StoredProcedure).FirstOrDefault();
+                return SqlMapper.Query<Customer>(
+                    con,
+                    "GetCustomerById",
+                    parameters,
+                    commandType: StoredProcedure
+                ).FirstOrDefault();
             }
             catch (Exception ex)
             {

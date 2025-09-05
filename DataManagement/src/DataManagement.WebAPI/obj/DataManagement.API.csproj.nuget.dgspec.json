@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/src/DataManagement.WebAPI/DataManagement.API.csproj": {}
+    "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\src\\DataManagement.WebAPI\\DataManagement.API.csproj": {}
   },
   "projects": {
-    "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Business.Interfaces/DataManagement.Business.Interfaces.csproj": {
+    "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Business.Interfaces\\DataManagement.Business.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Business.Interfaces/DataManagement.Business.Interfaces.csproj",
+        "projectUniqueName": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Business.Interfaces\\DataManagement.Business.Interfaces.csproj",
         "projectName": "DataManagement.Business.Interfaces",
-        "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Business.Interfaces/DataManagement.Business.Interfaces.csproj",
-        "packagesPath": "/home/runner/.nuget/packages/",
-        "outputPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Business.Interfaces/obj/",
+        "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Business.Interfaces\\DataManagement.Business.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\bnara\\.nuget\\packages\\",
+        "outputPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Business.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/runner/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\bnara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard1.4"
+          "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard1.4": {
-            "targetAlias": "netstandard1.4",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Entities/DataManagement.Entities.csproj": {
-                "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Entities/DataManagement.Entities.csproj"
+              "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj": {
+                "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj"
               }
             }
           }
@@ -36,51 +42,79 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "netstandard1.4": {
-          "targetAlias": "netstandard1.4",
-          "dependencies": {
-            "NETStandard.Library": {
-              "target": "Package",
-              "version": "[1.6.0, )"
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.304, 9.0.304]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.119/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Business/DataManagement.Business.csproj": {
+    "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Business\\DataManagement.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Business/DataManagement.Business.csproj",
+        "projectUniqueName": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Business\\DataManagement.Business.csproj",
         "projectName": "DataManagement.Business",
-        "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Business/DataManagement.Business.csproj",
-        "packagesPath": "/home/runner/.nuget/packages/",
-        "outputPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Business/obj/",
+        "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Business\\DataManagement.Business.csproj",
+        "packagesPath": "C:\\Users\\bnara\\.nuget\\packages\\",
+        "outputPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Business\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/runner/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\bnara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard1.4"
+          "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard1.4": {
-            "targetAlias": "netstandard1.4",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Business.Interfaces/DataManagement.Business.Interfaces.csproj": {
-                "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Business.Interfaces/DataManagement.Business.Interfaces.csproj"
+              "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Business.Interfaces\\DataManagement.Business.Interfaces.csproj": {
+                "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Business.Interfaces\\DataManagement.Business.Interfaces.csproj"
               },
-              "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Entities/DataManagement.Entities.csproj": {
-                "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Entities/DataManagement.Entities.csproj"
+              "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj": {
+                "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj"
               },
-              "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Repository.Interfaces/DataManagement.Repository.Interfaces.csproj": {
-                "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Repository.Interfaces/DataManagement.Repository.Interfaces.csproj"
+              "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository.Interfaces\\DataManagement.Repository.Interfaces.csproj": {
+                "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository.Interfaces\\DataManagement.Repository.Interfaces.csproj"
               }
             }
           }
@@ -89,42 +123,70 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "netstandard1.4": {
-          "targetAlias": "netstandard1.4",
-          "dependencies": {
-            "NETStandard.Library": {
-              "target": "Package",
-              "version": "[1.6.0, )"
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.304, 9.0.304]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.119/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Entities/DataManagement.Entities.csproj": {
+    "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Entities/DataManagement.Entities.csproj",
+        "projectUniqueName": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj",
         "projectName": "DataManagement.Entities",
-        "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Entities/DataManagement.Entities.csproj",
-        "packagesPath": "/home/runner/.nuget/packages/",
-        "outputPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Entities/obj/",
+        "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj",
+        "packagesPath": "C:\\Users\\bnara\\.nuget\\packages\\",
+        "outputPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/runner/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\bnara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard1.4"
+          "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard1.4": {
-            "targetAlias": "netstandard1.4",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -132,45 +194,73 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "netstandard1.4": {
-          "targetAlias": "netstandard1.4",
-          "dependencies": {
-            "NETStandard.Library": {
-              "target": "Package",
-              "version": "[1.6.0, )"
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.304, 9.0.304]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.119/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Repository.Interfaces/DataManagement.Repository.Interfaces.csproj": {
+    "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository.Interfaces\\DataManagement.Repository.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Repository.Interfaces/DataManagement.Repository.Interfaces.csproj",
+        "projectUniqueName": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository.Interfaces\\DataManagement.Repository.Interfaces.csproj",
         "projectName": "DataManagement.Repository.Interfaces",
-        "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Repository.Interfaces/DataManagement.Repository.Interfaces.csproj",
-        "packagesPath": "/home/runner/.nuget/packages/",
-        "outputPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Repository.Interfaces/obj/",
+        "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository.Interfaces\\DataManagement.Repository.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\bnara\\.nuget\\packages\\",
+        "outputPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/runner/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\bnara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard1.4"
+          "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard1.4": {
-            "targetAlias": "netstandard1.4",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Entities/DataManagement.Entities.csproj": {
-                "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Entities/DataManagement.Entities.csproj"
+              "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj": {
+                "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj"
               }
             }
           }
@@ -179,48 +269,76 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "netstandard1.4": {
-          "targetAlias": "netstandard1.4",
-          "dependencies": {
-            "NETStandard.Library": {
-              "target": "Package",
-              "version": "[1.6.0, )"
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.304, 9.0.304]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.119/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Repository/DataManagement.Repository.csproj": {
+    "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository\\DataManagement.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Repository/DataManagement.Repository.csproj",
+        "projectUniqueName": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository\\DataManagement.Repository.csproj",
         "projectName": "DataManagement.Repository",
-        "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Repository/DataManagement.Repository.csproj",
-        "packagesPath": "/home/runner/.nuget/packages/",
-        "outputPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Repository/obj/",
+        "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository\\DataManagement.Repository.csproj",
+        "packagesPath": "C:\\Users\\bnara\\.nuget\\packages\\",
+        "outputPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/runner/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\bnara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard1.4"
+          "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard1.4": {
-            "targetAlias": "netstandard1.4",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Entities/DataManagement.Entities.csproj": {
-                "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Entities/DataManagement.Entities.csproj"
+              "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj": {
+                "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj"
               },
-              "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Repository.Interfaces/DataManagement.Repository.Interfaces.csproj": {
-                "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Repository.Interfaces/DataManagement.Repository.Interfaces.csproj"
+              "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository.Interfaces\\DataManagement.Repository.Interfaces.csproj": {
+                "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository.Interfaces\\DataManagement.Repository.Interfaces.csproj"
               }
             }
           }
@@ -229,77 +347,99 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "netstandard1.4": {
-          "targetAlias": "netstandard1.4",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Dapper": {
               "target": "Package",
-              "version": "[1.50.2, )"
+              "version": "[2.1.35, )"
             },
             "Dapper.FluentMap": {
               "target": "Package",
-              "version": "[1.5.1, )"
+              "version": "[2.0.0, )"
             },
-            "NETStandard.Library": {
+            "Microsoft.Data.SqlClient": {
               "target": "Package",
-              "version": "[1.6.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.3.0, )"
-            },
-            "System.Runtime": {
-              "target": "Package",
-              "version": "[4.3.0, )"
-            },
-            "System.ValueTuple": {
-              "target": "Package",
-              "version": "[4.3.0, )"
+              "version": "[5.2.2, )"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.119/RuntimeIdentifierGraph.json"
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.304, 9.0.304]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/src/DataManagement.WebAPI/DataManagement.API.csproj": {
+    "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\src\\DataManagement.WebAPI\\DataManagement.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/src/DataManagement.WebAPI/DataManagement.API.csproj",
+        "projectUniqueName": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\src\\DataManagement.WebAPI\\DataManagement.API.csproj",
         "projectName": "DataManagement.API",
-        "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/src/DataManagement.WebAPI/DataManagement.API.csproj",
-        "packagesPath": "/home/runner/.nuget/packages/",
-        "outputPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/src/DataManagement.WebAPI/obj/",
+        "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\src\\DataManagement.WebAPI\\DataManagement.API.csproj",
+        "packagesPath": "C:\\Users\\bnara\\.nuget\\packages\\",
+        "outputPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\src\\DataManagement.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/runner/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\bnara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp1.0"
+          "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp1.0": {
-            "targetAlias": "netcoreapp1.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Business.Interfaces/DataManagement.Business.Interfaces.csproj": {
-                "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Business.Interfaces/DataManagement.Business.Interfaces.csproj"
+              "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Business.Interfaces\\DataManagement.Business.Interfaces.csproj": {
+                "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Business.Interfaces\\DataManagement.Business.Interfaces.csproj"
               },
-              "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Business/DataManagement.Business.csproj": {
-                "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Business/DataManagement.Business.csproj"
+              "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Business\\DataManagement.Business.csproj": {
+                "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Business\\DataManagement.Business.csproj"
               },
-              "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Entities/DataManagement.Entities.csproj": {
-                "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Entities/DataManagement.Entities.csproj"
+              "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj": {
+                "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Entities\\DataManagement.Entities.csproj"
               },
-              "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Repository.Interfaces/DataManagement.Repository.Interfaces.csproj": {
-                "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Repository.Interfaces/DataManagement.Repository.Interfaces.csproj"
+              "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository.Interfaces\\DataManagement.Repository.Interfaces.csproj": {
+                "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository.Interfaces\\DataManagement.Repository.Interfaces.csproj"
               },
-              "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Repository/DataManagement.Repository.csproj": {
-                "projectPath": "/home/runner/work/DataMgtCoreAPI/DataMgtCoreAPI/DataManagement/DataManagement.Repository/DataManagement.Repository.csproj"
+              "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository\\DataManagement.Repository.csproj": {
+                "projectPath": "D:\\SourceCode\\GitHub\\DataMgtCoreAPI\\DataMgtCoreAPI\\DataManagement\\DataManagement.Repository\\DataManagement.Repository.csproj"
               }
             }
           }
@@ -308,62 +448,43 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "netcoreapp1.0": {
-          "targetAlias": "netcoreapp1.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.Mvc": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "Microsoft.AspNetCore.Routing": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "Microsoft.AspNetCore.Server.IISIntegration": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "Microsoft.AspNetCore.Server.Kestrel": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "Microsoft.Extensions.Configuration.FileExtensions": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "Microsoft.Extensions.Configuration.Json": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "Microsoft.Extensions.Logging": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "Microsoft.Extensions.Logging.Console": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "Microsoft.Extensions.Options.ConfigurationExtensions": {
-              "target": "Package",
-              "version": "[1.0.0, )"
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.304, 9.0.304]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
             },
             "Microsoft.NETCore.App": {
-              "target": "Package",
-              "version": "[1.0.1, )"
+              "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.119/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

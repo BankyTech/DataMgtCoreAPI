@@ -8,8 +8,9 @@ using DataManagement.Entities;
 
 namespace DataManagement.WebAPI.Controllers
 {
+    [ApiController]
     [Route("api/[controller]")]
-    public class UserController : Controller
+    public class UserController : ControllerBase
     {
         private readonly IUserManager _userManager;
        
@@ -27,7 +28,7 @@ namespace DataManagement.WebAPI.Controllers
                 var users = _userManager.GetAllUser();
                 return Ok(users);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // In a real application, use proper logging here
                 return StatusCode(500, "An error occurred while retrieving users");
@@ -53,7 +54,7 @@ namespace DataManagement.WebAPI.Controllers
 
                 return Ok(user);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // In a real application, use proper logging here
                 return StatusCode(500, "An error occurred while retrieving the user");
@@ -84,7 +85,7 @@ namespace DataManagement.WebAPI.Controllers
 
                 return StatusCode(500, "Failed to create user");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // In a real application, use proper logging here
                 return StatusCode(500, "An error occurred while creating the user");
@@ -125,7 +126,7 @@ namespace DataManagement.WebAPI.Controllers
 
                 return StatusCode(500, "Failed to update user");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // In a real application, use proper logging here
                 return StatusCode(500, "An error occurred while updating the user");
@@ -151,7 +152,7 @@ namespace DataManagement.WebAPI.Controllers
 
                 return StatusCode(500, "Failed to delete user");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // In a real application, use proper logging here
                 return StatusCode(500, "An error occurred while deleting the user");

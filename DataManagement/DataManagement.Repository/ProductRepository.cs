@@ -7,7 +7,6 @@ using Dapper;
 using System.Reflection;
 using System.Data;
 using static System.Data.CommandType;
-using System.Data.SqlClient;
 using System.Linq;
 using Dapper.FluentMap.Mapping;
 
@@ -50,7 +49,7 @@ namespace DataManagement.Repository
                 new CustomPropertyTypeMap(typeof(Product), (type, columnName) => type.GetProperty(columnMap[columnName])));
 
            List<Product> products = SqlMapper.Query<Product>(
-               (SqlConnection)con,"select * from Products",commandType:Text).ToList();
+               con, "select * from Products", commandType: Text).ToList();
 
             return products;
         }
